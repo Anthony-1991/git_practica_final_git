@@ -209,6 +209,15 @@ padding-left: 0px;
     text-align: center;
 }
 
+
+.contenedor-nosotros{
+    margin-top: 10px;
+}
+
+.imagen-nosotros{
+    height: 40vh;
+}
+
 .main-servicio {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr 1fr 1fr 70px;
@@ -584,7 +593,6 @@ svg circle {
           "footer";
       }
     
-    
     .footer{
         grid-area: footer; 
         height: 100%;
@@ -602,6 +610,8 @@ svg circle {
           "main"
           "footer";
       }
+
+    
     
     .footer{
         grid-area: footer; 
@@ -612,6 +622,9 @@ svg circle {
 
 
 @media (min-width:576px){
+
+    
+
     .main-servicio {  display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px 4fr 1fr;
@@ -626,6 +639,8 @@ svg circle {
           "servicio-baño servicio-clinicaveterinaria servicio-hospedaje"
           "botoncontacto-servicio botoncontacto-servicio botoncontacto-servicio";
       }
+
+      
     
     .subtitulo-servicio{
         grid-area: subtitulo-servicio;
@@ -688,7 +703,35 @@ svg circle {
     }
 }
 
+@media (min-width:768px){
+    .tarjeta-nosotros{
+        min-height: 830px;
+    }
+}
 
+/* @media (min-width:806px){
+    .tarjeta-nosotros{
+        min-height: 860px;
+    }
+}
+
+@media (min-width:839px){
+    .tarjeta-nosotros{
+        min-height: 830px;
+    }
+}
+
+@media (min-width:877px){
+    .tarjeta-nosotros{
+        min-height: 810px;
+    }
+}
+
+@media (min-width:912px){
+    .tarjeta-nosotros{
+        min-height: 790px;
+    }
+} */
 
 
 @media (min-width:1024px){
@@ -696,6 +739,9 @@ svg circle {
 	.contenedor-header{
 		width: calc(100vw - 40px);
 	}
+
+    
+
 
     nav .menu{
 		position: static;
@@ -713,6 +759,17 @@ svg circle {
 	}	
     .subtitulo_veterinario{
         font-size: 30px;
+    }
+
+    .tarjeta-nosotros{
+        min-height: 710px;
+    }
+
+}
+
+@media (min-width:1200px){
+    .tarjeta-nosotros{
+        min-height: 660px;
     }
 }
 
